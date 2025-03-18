@@ -65,3 +65,109 @@ function mostrarDia() {
         resultado.textContent = "Dia inválido!";
     }
 }
+var num1 = -1;
+var num2 = -1;
+var ope = 0;
+var troca = 0;
+
+function n0(){
+    let resultado = document.getElementById("resultado");
+    if (troca == 1){
+        num2 = 0;
+        resultado.textContent = num2;
+    }else{
+        num1 = 0;
+        resultado.textContent = num1;
+    }
+}
+function n1(){
+    let resultado = document.getElementById("resultado");
+    if (troca == 1){
+        num2 = 1;
+        resultado.textContent = num2;
+
+    }else{
+        num1 = 1;
+        resultado.textContent = num1;
+    }
+}
+function n2(){
+    let resultado = document.getElementById("resultado");
+    if (troca == 1){
+        num2 = 2;
+        resultado.textContent = num2;
+    }else{
+        num1 = 2;
+        resultado.textContent = num1;
+    }
+}
+function n3(){
+    let resultado = document.getElementById("resultado");
+    if (troca == 1){
+        num2 = 3;
+        resultado.textContent = num2;
+    }else{
+        num1 = 3;
+        resultado.textContent = num1;
+    }
+}
+function n4(){
+    let resultado = document.getElementById("resultado");
+    if (troca == 1){
+        num2 = 4;
+        resultado.textContent = num2;
+    }else{
+        num1 = 4;
+        resultado.textContent = num1;
+    }
+}
+function n5(){
+    let resultado = document.getElementById("resultado");
+    if (troca == 1){
+        num2 = 5;
+        resultado.textContent = num2;
+    }else{
+        num1 = 5;
+        resultado.textContent = num1;
+    }
+}
+function adicao(){
+    let resultado = document.getElementById("resultado");
+    if (num1 == -1){
+        resultado.textContent = "adicione um numero primeiro";
+    }else{
+        ope = 1;
+        resultado.textContent = "adição";
+        troca = 1;
+    }
+}
+function subtracao(){
+    let resultado = document.getElementById("resultado");
+    if (num1 == -1){
+        resultado.textContent = "adicione um numero primeiro";
+    }else{
+        ope = 2;
+        resultado.textContent = "subtração";
+        troca = 1;
+    }
+}
+function resolver(){
+    let resultado = document.getElementById("resultado");
+    if (num2 == -1){
+        resultado.textContent = "adicione um segundo numero";
+    }else{
+        if (ope == 1){
+            resultado.textContent = (num1 + num2);
+            num1 = -1;
+            num2 = -1;
+            ope = 0;
+            troca = 0;
+        }else if(ope == 2){
+            resultado.textContent = (num1 - num2);
+            num1 = -1;
+            num2 = -1;
+            ope = 0;
+            troca = 0;
+        }
+    }
+}
