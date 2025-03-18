@@ -131,6 +131,46 @@ function n5(){
         resultado.textContent = num1;
     }
 }
+function n6(){
+    let resultado = document.getElementById("resultado");
+    if (troca == 1){
+        num2 = 6;
+        resultado.textContent = num2;
+    }else{
+        num1 = 6;
+        resultado.textContent = num1;
+    }
+}
+function n7(){
+    let resultado = document.getElementById("resultado");
+    if (troca == 1){
+        num2 = 7;
+        resultado.textContent = num2;
+    }else{
+        num1 = 7;
+        resultado.textContent = num1;
+    }
+}
+function n8(){
+    let resultado = document.getElementById("resultado");
+    if (troca == 1){
+        num2 = 8;
+        resultado.textContent = num2;
+    }else{
+        num1 = 8;
+        resultado.textContent = num1;
+    }
+}
+function n9(){
+    let resultado = document.getElementById("resultado");
+    if (troca == 1){
+        num2 = 9;
+        resultado.textContent = num2;
+    }else{
+        num1 = 9;
+        resultado.textContent = num1;
+    }
+}
 function adicao(){
     let resultado = document.getElementById("resultado");
     if (num1 == -1){
@@ -151,6 +191,26 @@ function subtracao(){
         troca = 1;
     }
 }
+function multiplicacao(){
+    let resultado = document.getElementById("resultado");
+    if (num1 == -1){
+        resultado.textContent = "adicione um numero primeiro";
+    }else{
+        ope = 3;
+        resultado.textContent = "multiplicação";
+        troca = 1;
+    }
+}
+function divisao(){
+    let resultado = document.getElementById("resultado");
+    if (num1 == -1){
+        resultado.textContent = "adicione um numero primeiro";
+    }else{
+        ope = 4;
+        resultado.textContent = "divisão";
+        troca = 1;
+    }
+}
 function resolver(){
     let resultado = document.getElementById("resultado");
     if (num2 == -1){
@@ -168,6 +228,18 @@ function resolver(){
             num2 = -1;
             ope = 0;
             troca = 0;
-        }
+        }else if(ope == 3){
+            resultado.textContent = (num1 * num2);
+            num1 = -1;
+            num2 = -1;
+            ope = 0;
+            troca = 0;
+        }else if(ope == 4){
+            resultado.textContent = (num1 / num2);
+            num1 = -1;
+            num2 = -1;
+            ope = 0;
+            troca = 0;
+        }   
     }
 }
